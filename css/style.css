@@ -1,0 +1,296 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(188, 225, 240);
+}
+/* *************NAV BAR************** */
+.collapse{
+    margin-left: 4%;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    position: absolute 0px;
+    background:rgb(86, 7, 110) !important; 
+    opacity: 0.9;
+   
+}
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    align-content: center;
+    margin-right: 45px;
+    margin-top: 5px;
+    margin-left: 40vw;
+    
+    }
+nav li{
+    list-style-type: none;
+    margin: 10px 1em;
+    margin-top: 30px;
+}
+nav a{
+    color:rgb(114, 216, 247);
+}
+#logo{
+    height: 45px;
+   
+}
+    
+
+
+/* ******************HEADER******************* */
+header{
+    background: url(../media/wallpaper.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 40px;
+}
+
+h1, h2, h3, h4, p, footer {
+    text-align: center;
+}
+#titreMontant{
+    border-radius: 65px 65px 65px 65px;
+}
+
+#mainTitle{
+    font-size: 5em;
+    color: black;
+    text-transform: uppercase;
+    /* text-shadow: -6px 3px 2px rgba(223, 190, 7, 0.96); */
+    /* text-shadow: 2px 2px 2px #CEB81A, 2px -1px 2px #CEB81A, -3px -1px 2px #CEB81A, -3px -2px 2px #CEB81A, -3px 4px 2px #CEB81A, 4px 4px 2px #CEB81A, 4px -2px 2px #CEB81A, 4px -2px 2px #CEB81A, -4px -2px 2px #CEB81A; */
+    padding: 22vh 0 0 10%;
+    opacity: 0.9;
+    animation:titre ease 4s;
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translateY(380px);
+    }
+    100%{
+        opacity: 0.9;
+        transform: translateY(0px, 0px);
+    }
+}
+/* ***********************LEFT PART**************** */
+#leftPart{
+    background-color:rgb(110, 151, 197);
+    border-radius: 20px;
+    padding: 25px;
+}
+.elements{
+    padding: 20px 0;
+    margin-top: 20px;
+    transform: translateY(20%)
+}
+.elements img{
+    border-radius: 50%;
+    width: 200px;
+    height: 180px;
+}
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.elements .button{
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+
+/* ********************RIGHT PART****************** */
+#rightPart{
+    background-color:rgb(86, 7, 110);
+    border-radius: 20px;
+    padding: 20px;
+    color:rgba(223, 190, 7, 0.96);
+}
+.lesCodes{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+.sideCode h4{
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #CEB81A, -1px 1px 0px #CEB81A, -1px -1px 0px #CEB81A, 0px -1px 0px #CEB81A, 1px -1px 0px #CEB81A;
+    transform:translateY(20%);
+}
+.sideCode:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.2s;
+}
+
+/* **************************TRANSITION SABRE LASER************************* */
+#transition{
+    padding: 50px 0;
+    margin-left: 25vw;
+}
+
+#transition img{
+    animation: sabre linear 26s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes sabre{
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    14% {
+      transform:  translate(160px,-18px)  ;
+    }
+    24% {
+      transform:  translate(1px,2px)  ;
+    }
+    36% {
+      transform:  translate(142px,32px)  ;
+    }
+    47% {
+      transform:  translate(2px,1px)  ;
+    }
+    60% {
+      transform:  translate(177px,-29px)  ;
+    }
+    73% {
+      transform:  translate(1px,0px)  ;
+    }
+    87% {
+      transform:  translate(175px,26px)  ;
+    }
+    100% {
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  
+  /* ********************NEWSLETTER***************** */
+
+  #newsletter{
+      background: url(../media/vitesseLumiere.jpg)no-repeat 50% 50%;
+      background-size: cover;
+      height: 370px;
+      width: 70%;
+      min-width: 450px;
+      margin:0 auto 70px auto;
+      border-radius: 50%;
+  }
+  #newsletter h4{
+      margin-top: 15px;
+      padding: 100px 0 20px 0;
+      font-size: 2em;
+      text-shadow: 1px 1px 0px #CEB81A, -1px 1px 0px #CEB81A, -1px -1px 0px #CEB81A, 0px -1px 0px #CEB81A, 1px -1px 0px #CEB81A;
+  }
+  #newsletter .input-group{
+      width: 40%;
+      min-width: 350px;
+      margin: 0 auto;
+  }
+
+  /* **************************FOOTER************************** */
+  footer{
+      background-color: rgb(110, 151, 197);
+      padding: 15px 0 4px 0;
+  }
+  #logoFoot{
+      height: 45px;
+  }
+
+
+  /* *************************MADIA QUERIES*******************/
+
+  @media screen and (max-width: 980px) {
+    nav li{
+        font-size: 0.8em;
+    }
+
+    #titreMontant{
+        transform: scale(0.8);
+        margin-left: -1.5em;
+        
+    }
+
+      #rightPart {
+          display:flex;
+          justify-content: space-between;
+      }
+
+      #rightPart h2{
+        display: none;
+      }
+      .elements {
+        padding: 30px 5px 30px 5px;
+        font-size: 0.7em;
+    }
+      .lesCodes{
+        height: 100px;
+        width: 100px;
+        margin: 10px 20px 10px 20px;
+        
+    }
+    .sideCode h4{
+        font-size: 1em;
+    }
+
+  }
+
+  @media screen and (max-width: 790px) {
+      #titreMontant{
+          transform: scale(0.5);
+          margin-left: -2.7em;
+      }
+      .elements {
+        padding: 30px 5px 30px 5px;
+        font-size: 0.8em;
+    }
+    .element img{
+        max-width: 140px;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    #transition img{
+        width: 250px;
+    }
+    .sideCode {
+        height: 90px;
+        width: 90px;
+    }
+    .sideCode h4{
+        font-size: 0.9em;
+    }
+    .lesCodes{
+        height: 60px;
+        width: 60px;
+        margin: 10px 20px 10px 20px;
+        
+    }
+}
+@media screen and (max-width: 580px) {
+    #titreMontant{
+        transform: scale(0.3);
+        margin-left: -3.1em;
+    }
+    .elements {
+        padding: 15px 0;
+        text-align: center;
+        font-size: 0.7em;
+    }
+    .element.img {
+        margin-bottom: 10px;
+    }
+    nav{
+        display: none !important;
+    }
+    h4{
+        font-size: 0.3em;
+    }
+}
+  
