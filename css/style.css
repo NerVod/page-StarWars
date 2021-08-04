@@ -9,7 +9,7 @@ body{
     margin-left: 4%;
 }
 .navbar{
-    height: 60px;
+    height: 90px;
     width: 100%;
     position: absolute 0px;
     background:rgb(86, 7, 110) !important; 
@@ -22,7 +22,7 @@ nav ul{
     align-content: center;
     margin-right: 45px;
     margin-top: 5px;
-    margin-left: 40vw;
+    margin-left: 70vw;
     
     }
 nav li{
@@ -206,6 +206,24 @@ h1, h2, h3, h4, p, footer {
 
 
   /* *************************MADIA QUERIES*******************/
+@media screen and (max-width: 1750px){
+    nav ul{
+    margin-left: 60vw;
+        
+        }
+}
+
+@media screen and (max-width: 1260px){
+    nav ul{
+    margin-left: 50vw;
+        
+        }
+}
+
+
+
+
+
 
   @media screen and (max-width: 980px) {
     nav li{
@@ -221,6 +239,7 @@ h1, h2, h3, h4, p, footer {
       #rightPart {
           display:flex;
           justify-content: space-between;
+          margin-top: 20px;
       }
 
       #rightPart h2{
@@ -241,6 +260,15 @@ h1, h2, h3, h4, p, footer {
     }
 
   }
+
+  @media screen and (max-width: 850px){
+    nav ul{
+    margin-left: 35vw;
+        
+        }
+}
+
+
 
   @media screen and (max-width: 790px) {
       #titreMontant{
@@ -273,6 +301,14 @@ h1, h2, h3, h4, p, footer {
         
     }
 }
+
+@media screen and (max-width: 630px){
+    nav ul{
+    margin-left: 25vw;
+        
+        }
+}
+
 @media screen and (max-width: 580px) {
     #titreMontant{
         transform: scale(0.3);
@@ -291,6 +327,10 @@ h1, h2, h3, h4, p, footer {
     }
     h4{
         font-size: 0.3em;
+    }
+    #leftPart{
+        padding-bottom: 70px;
+        margin-bottom: 20px;
     }
 }
   
